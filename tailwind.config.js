@@ -14,6 +14,7 @@ export default {
         "caramel": "#EAA032",
         "main":"#CFF4F4",
         "secondary":"#3B242A",
+        "green": "#31994E"
       }
       ,
       fontFamily : {
