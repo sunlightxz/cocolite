@@ -22,7 +22,7 @@ const Hero = ({ heroImage }) => {
        }
 
   return (
-    <div className='h-[100vh] bg-bgmain font-popping w-full'>
+    <div className='h-screen bg-bgmain font-popping w-full'>
         <div className="pb-12 mx-auto flex justify-center items-center w-full h-full">
             <div className="bg flex flex-col justify-center items-center w-full">
                 <h1 className='text-7xl text-teal-100 mb-9 mx-auto'><span className='text-opacity-60 text-teal-100 '>for</span> lite</h1>

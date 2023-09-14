@@ -16,9 +16,7 @@ function App() {
   return (
     <>
      <Nav/>
-     <About/>
-     <Healthy/>
-     <Lite/>
+    
      <Subs/>
      <Footer/>
     </>

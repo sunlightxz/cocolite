@@ -17,7 +17,7 @@ const About = () => {
 
   return (
     <div className='h-[100vh] bg-about font-popping w-full relative ' >
-        <img src={choco} alt=""  className='absolute -top-14 right-0 objectx'data-value="4"/>
+        <img src={choco} alt=""  className='absolute -top-14 right-6 objectx'data-value="4"/>
         <div className="flex justify-center items-center w-full h-full relative pr-5">
             <div className="flex flex-wrap items-center">
                 <div className="w-1/2">
