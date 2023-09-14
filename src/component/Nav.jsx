@@ -4,20 +4,32 @@ import logoAlt from '../assets/CocoliteB.png';
 import chocolateBarsImage from '../assets/chocolateHero.png';
 import cakeImage from '../assets/cakehero.png';
 import cakeImage2 from '../assets/cakehero2.png';
+
+import chocolatehBarsImage from '../assets/healt2.png';  
+
 import { Bars3Icon, XMarkIcon, Bars3BottomLeftIcon } from '@heroicons/react/24/solid';
 import HeroSection from './Hero';
+import About from './About'
+import Healthy from './Healthy'
+import Lite from './Lite'
+
 
 const Nav = () => {
   const [activeButton, setActiveButton] = useState('cakes');
   const [heroImage, setHeroImage] = useState(cakeImage);
+  const [healtImage, setHealtImage] = useState(cakeImage2);
 
   const handleButtonClick = (buttonType) => {
     if (buttonType === 'cakes') {
       setActiveButton('cakes');
       setHeroImage(cakeImage);
+      setHealtImage(cakeImage2);
+
     } else if (buttonType === 'chocolateBars') {
       setActiveButton('chocolateBars');
       setHeroImage(chocolateBarsImage);
+      setHealtImage(chocolatehBarsImage);
+
     }
   };
 
@@ -62,7 +74,7 @@ const Nav = () => {
               <button
                
 
-                className={` text-white text-xl px-8 py-3 rounded-[30px] active   ${
+                className={`text-xl px-8 py-3 rounded-[30px] active   ${
                   changeNavbarColor ? `${
                     activeButton === 'cakes' ? 'bg-secondary hover:bg-slate-800' : 'border-2 border-slate-800 border-opacity-80 text-black'
                   }` : `${
@@ -76,7 +88,7 @@ const Nav = () => {
                 Cakes
               </button>
               <button
-              className={` text-white text-xl px-8 py-3 rounded-[30px] active   ${
+              className={`text-xl px-8 py-3 rounded-[30px] active   ${
                 changeNavbarColor ? `${
                   activeButton === 'chocolateBars' ? 'bg-secondary hover:bg-slate-800' : 'border-2 border-slate-800 border-opacity-80 text-black'
                 }` : `${
@@ -93,6 +105,9 @@ const Nav = () => {
         </div>
       </div>
       <HeroSection heroImage={heroImage} />
+      <About/>
+      <Healthy healtImage={healtImage}/>
+      <Lite healtImage={healtImage}/>
     </div>
   );
 };

@@ -8,7 +8,7 @@ export default {
     extend: {
       colors :{
         "bgmain" :"#82CAC9",
-        "about": "#336040",
+        "about": "#2C6F56",
         "lite": "#F1D993",
         "white-lite": "#FDFAEF",
         "caramel": "#EAA032",
