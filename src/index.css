@@ -3,7 +3,11 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
 
-
+body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
 .shake:hover {
     color: white;
     transition: 1s ease-out;
@@ -32,5 +36,73 @@
         transform: translateY(0);
         transform: rotate(-15deg);
 
+    }
+  }
+
+  .shakesx:hover{
+    color: white;
+    transition: 1s ease-out;
+    cursor: pointer;
+    animation: shakesd 1s ;
+  }
+
+  @keyframes shakesd{
+    0%{
+      transform: translateY(0);
+      transform: rotate(0deg);
+    }
+      
+    50%{
+        transform: translateY(-25px);
+        transform: rotate(50deg);
+
+    }
+    100%{
+        transform: translateY(0);
+        transform: rotate(0deg);
+
+    }
+  }
+
+
+  .cursorMove {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+  }
+  .cursorMove::after { 
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 8px solid #D9B266;
+    border-radius: 50%;
+    opacity: .5;
+    
+    animation: cursorAnim .5s infinite alternate;
+
+  }
+
+
+  @keyframes cursorAnim {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(.7);
+    }
+  }
+  @keyframes cursorAnim {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(.4);
     }
   }

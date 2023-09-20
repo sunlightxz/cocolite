@@ -16,16 +16,16 @@ const About = () => {
     }
 
   return (
-    <div className='h-[100vh] bg-about font-popping w-full relative ' >
-        <img src={choco} alt=""  className='absolute -top-14 right-6 objectx'data-value="4"/>
+    <div className='lg:h-screen h-auto bg-about font-popping w-full relative ' >
+        <img src={choco} alt=""  className='absolute -top-14 right-6 objectx md:max-w-[200px] max-w-[150px] lg:max-w-[70%]'data-value="4"/>
         <div className="flex justify-center items-center w-full h-full relative pr-5">
             <div className="flex flex-wrap items-center">
-                <div className="w-1/2">
-                    <div className="items-start absolute inset-0">
-                        <img src={about} className="h-[99.99%]" alt=""/>
+                <div className="w-1/2 sm:block hidden">
+                    <div className="items-start">
+                        <img src={about} className="md:min-h-[auto] lg:h-screen min-h-full  " alt=""/>
                     </div>
                 </div>
-                <div className="relative flex flex-col justify-end items-center w-1/2">
+                <div className="relative flex flex-col justify-end items-center sm:w-1/2 sm:p-0 p-10">
                     <p className="text-teal-100 text-opacity-60 text-[26px] font-medium mb-4">We provide quality and expert information
                        to help <span className='text-teal-100'>chocolate lovers</span> make educated 
                        choices about specialty <span className='text-teal-100'>chocolate</span> products and <span className='text-teal-100'>cakes </span>
